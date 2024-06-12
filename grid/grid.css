@@ -1,0 +1,31 @@
+.layout{
+    display:grid;
+    margin:40px ;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:30vh 80vh 30vh;
+    grid-template-areas:
+      "h h h h h"
+       "sb1 m m m sb2"
+      "f f f f f "
+  }
+  .header{
+    grid-area:h;
+  }
+  .sidebar1{
+    grid-area:sb1;
+  }
+  .main{
+    grid-area:m;
+    
+  }
+  .footer{
+    grid-area:f;
+  }
+  .layout div{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    border:solid black;
+    background-color:rgb(236,172,172);
+    font-size:2rem;
+  }
